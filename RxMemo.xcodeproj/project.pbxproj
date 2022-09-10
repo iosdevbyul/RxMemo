@@ -10,7 +10,6 @@
 		66ED8593B590B3A398DC2D7F /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2F336E80D22ACF746F1CB8 /* Pods_RxMemo.framework */; };
 		78B90D5728CCEC22003B67CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B90D5628CCEC22003B67CD /* AppDelegate.swift */; };
 		78B90D5928CCEC22003B67CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B90D5828CCEC22003B67CD /* SceneDelegate.swift */; };
-		78B90D5B28CCEC22003B67CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B90D5A28CCEC22003B67CD /* ViewController.swift */; };
 		78B90D5E28CCEC22003B67CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B90D5C28CCEC22003B67CD /* Main.storyboard */; };
 		78B90D6128CCEC22003B67CD /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78B90D5F28CCEC22003B67CD /* RxMemo.xcdatamodeld */; };
 		78B90D6328CCEC23003B67CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B90D6228CCEC23003B67CD /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		78B90D5328CCEC22003B67CD /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B90D5628CCEC22003B67CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78B90D5828CCEC22003B67CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78B90D5A28CCEC22003B67CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		78B90D5D28CCEC22003B67CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78B90D6028CCEC22003B67CD /* RxMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxMemo.xcdatamodel; sourceTree = "<group>"; };
 		78B90D6228CCEC23003B67CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +50,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		78345E2A28CCEEEC0052FE5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78345E2B28CCEF000052FE5C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				78B90D5C28CCEC22003B67CD /* Main.storyboard */,
+				78B90D6428CCEC23003B67CD /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		78345E2C28CCEF110052FE5C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		78345E2D28CCEF260052FE5C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		78345E2E28CCEF390052FE5C /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		78B90D4A28CCEC22003B67CD = {
 			isa = PBXGroup;
 			children = (
@@ -73,12 +108,14 @@
 		78B90D5528CCEC22003B67CD /* RxMemo */ = {
 			isa = PBXGroup;
 			children = (
+				78345E2E28CCEF390052FE5C /* Scene */,
+				78345E2D28CCEF260052FE5C /* Service */,
+				78345E2C28CCEF110052FE5C /* ViewModel */,
+				78345E2B28CCEF000052FE5C /* ViewController */,
+				78345E2A28CCEEEC0052FE5C /* Model */,
 				78B90D5628CCEC22003B67CD /* AppDelegate.swift */,
 				78B90D5828CCEC22003B67CD /* SceneDelegate.swift */,
-				78B90D5A28CCEC22003B67CD /* ViewController.swift */,
-				78B90D5C28CCEC22003B67CD /* Main.storyboard */,
 				78B90D6228CCEC23003B67CD /* Assets.xcassets */,
-				78B90D6428CCEC23003B67CD /* LaunchScreen.storyboard */,
 				78B90D6728CCEC23003B67CD /* Info.plist */,
 				78B90D5F28CCEC22003B67CD /* RxMemo.xcdatamodeld */,
 			);
@@ -91,7 +128,6 @@
 				155C4B67EA61C0DCEE0C7073 /* Pods-RxMemo.debug.xcconfig */,
 				5925F955791E0172D7B0AF14 /* Pods-RxMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B90D5B28CCEC22003B67CD /* ViewController.swift in Sources */,
 				78B90D5728CCEC22003B67CD /* AppDelegate.swift in Sources */,
 				78B90D5928CCEC22003B67CD /* SceneDelegate.swift in Sources */,
 				78B90D6128CCEC22003B67CD /* RxMemo.xcdatamodeld in Sources */,
